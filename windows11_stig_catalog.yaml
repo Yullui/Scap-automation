@@ -1,0 +1,261 @@
+stig: Windows11
+profile: DoD
+version: "1.0"
+
+controls:
+
+  # --- Windows 11 v1r5 Registry STIGs ---
+
+  - stig_id: WN11-CC-000005
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\Personalization
+    name: NoLockScreenCamera
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000010
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\Personalization
+    name: NoLockScreenSlideshow
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000020
+    category: registry
+    path: HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters
+    name: DisableIPSourceRouting
+    value: 2
+    type: DWORD
+
+  - stig_id: WN11-CC-000025
+    category: registry
+    path: HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters
+    name: EnableICMPRedirect
+    value: 0
+    type: DWORD
+
+  - stig_id: WN11-CC-000030
+    category: registry
+    path: HKLM\SYSTEM\CurrentControlSet\Services\NetBT\Parameters
+    name: NoNameReleaseOnDemand
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000038
+    category: registry
+    path: HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest
+    name: UseLogonCredential
+    value: 0
+    type: DWORD
+
+  - stig_id: WN11-CC-000039
+    category: registry
+    path: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Audit
+    name: ProcessCreationIncludeCmdLine_Enabled
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000044
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\NetCache
+    name: Disabled
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000068
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation
+    name: AllowProtectedCreds
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000110
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Printers
+    name: DisableHTTPPrinting
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000130
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\System
+    name: EnumerateLocalUsers
+    value: 0
+    type: DWORD
+
+  - stig_id: WN11-CC-000155
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services
+    name: fAllowToGetHelp
+    value: 0
+    type: DWORD
+
+  - stig_id: WN11-CC-000165
+    category: registry
+    path: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+    name: MSAOptional
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000175
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\AppCompat
+    name: DisableInventory
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000197
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent
+    name: DisableWindowsConsumerFeatures
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000205
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\DataCollection
+    name: AllowTelemetry
+    value: 0
+    type: DWORD
+
+  - stig_id: WN11-CC-000260
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\PassportForWork\PINComplexity
+    name: MinimumPINLength
+    value: 6
+    type: DWORD
+
+  - stig_id: WN11-CC-000280
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services
+    name: fPromptForPassword
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000285
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services
+    name: fEncryptRPCTraffic
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000315
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer
+    name: AlwaysInstallElevated
+    value: 0
+    type: DWORD
+
+  - stig_id: WN11-CC-000326
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging
+    name: EnableScriptBlockLogging
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000327
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\PowerShell\Transcription
+    name: EnableTranscripting
+    value: 1
+    type: DWORD
+
+  - stig_id: WN11-CC-000330
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\WinRM\Client
+    name: AllowBasic
+    value: 0
+    type: DWORD
+
+  - stig_id: WN11-CC-000335
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\WinRM\Client
+    name: AllowUnencryptedTraffic
+    value: 0
+    type: DWORD
+
+  - stig_id: WN11-CC-000345
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\WinRM\Service
+    name: AllowBasic
+    value: 0
+    type: DWORD
+
+  - stig_id: WN11-CC-000350
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Windows\WinRM\Service
+    name: AllowUnencryptedTraffic
+    value: 0
+    type: DWORD
+
+  - stig_id: V-253363
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002
+    name: AllowUnencryptedTraffic
+    value:
+      - NistP384
+      - NistP256
+    type: REG_MULTI_SZ
+
+  - stig_id: V-253365
+    category: registry
+    path: HKLM\Software\Policies\Microsoft\Windows\WcmSvc\GroupPolicy
+    name: fBlockNonDomain
+    value: 1
+    type: DWORD
+
+  - stig_id: V-253424
+    category: registry
+    path: HKLM\Software\Policies\Microsoft\WindowsInkWorkspace
+    name: AllowWindowsInkWorkspace
+    value: 1
+    type: DWORD
+
+  - stig_id: V-253423-1
+    category: registry
+    path: HKLM\Software\Policies\Microsoft\Windows\System
+    name: AllowDomainPINLogon
+    value: 1
+    type: DWORD
+
+  - stig_id: V-253423-2
+    category: registry
+    path: HKLM\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0
+    name: NTLMMinClientSec
+    value: 1536870912
+    type: DWORD
+
+  - stig_id: V-253468-1
+    category: registry
+    path: HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System
+    name: FilterAdministratorToken
+    value: 1
+    type: DWORD
+
+  - stig_id: V-253468-2
+    category: registry
+    path: HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System
+    name: SupportedEncryptionTypes
+    value: 2147483640
+    type: DWORD
+
+  - stig_id: V-253407
+    category: registry
+    path: HKLM\SOFTWARE\Policies\Microsoft\Internet Explorer\Feeds
+    name: DisableEnclosureDownload
+    value: 1
+    type: DWORD
+
+  - stig_id: V-253413-1
+    category: registry
+    path: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+    name: DisableAutomaticRestartSignOn
+    value: 1
+    type: DWORD
+
+  - stig_id: V-253413-2
+    category: registry
+    path: HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\CredUI
+    name: EnumerateAdministrators
+    value: 0
+    type: DWORD
