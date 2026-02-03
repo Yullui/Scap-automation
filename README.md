@@ -27,5 +27,11 @@ Before using this repository, ensure you have:
 - SCAP engine or interpreter capable of processing SCAP content (OVAL/XCCDF), such as:
   - **OpenSCAP (or equivalent SCAP tool)** if leveraging XCCDF/OVAL scanning.
   - Windows-native SCAP/PowerShell toolchain if available.
-- Required Python packages (install via `pip`):
-  
+
+- Bellow use this to get it working
+- first use git clone if you aready have it
+python apply_windows11_stig.py 
+  --catalog windows11_stig_catalog.yaml
+  --output results.json
+
+This was the hardest tool to learn with AI, I do cross reference lines of code with actual python doc references and automation books.
